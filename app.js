@@ -15,6 +15,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/contact', function(req, res) {
+	console.log(req.query);
 	res.render('contact', {qs: req.query});
 });
 
